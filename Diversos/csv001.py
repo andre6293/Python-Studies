@@ -2,12 +2,12 @@ import csv
 import re
 
 with open(
-    "D:\Programacao\Python\Estudos diversos\Lista Nominais\SED.txt",
+    "Diversos\Lista Nominais\SED.txt",
         "r") as file:
     sed = file.read()
 
 with open(
-    "D:\Programacao\Python\Estudos diversos\Lista Nominais\eSEC.txt",
+    "Diversos\Lista Nominais\eSEC.txt",
         "r") as file:
     esec = file.read()
 
@@ -27,3 +27,4 @@ with open('deleteme.csv', "w", encoding="UTF-8", newline='') as f:
     for row in rows:
         writer.writerow(row)
 f.close()
+print("All done. :)")
