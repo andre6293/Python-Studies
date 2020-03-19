@@ -1,3 +1,6 @@
+# Andre Pinto
+# @Coursera - Introdução ao Python I (USP)
+
 # Com math
 
 # import math

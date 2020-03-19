@@ -1,3 +1,6 @@
+# Andre Pinto
+# @Coursera - Introdução ao Python I (USP)
+
 # Variaveis
 n = input("Digite um número inteiro: ")
 rep = len(n)

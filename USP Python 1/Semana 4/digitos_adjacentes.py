@@ -1,3 +1,6 @@
+# Andre Pinto
+# @Coursera - Introdução ao Python I (USP)
+
 n = input("Digite um número inteiro: ")
 lgth = len(n)
 adjacente = False

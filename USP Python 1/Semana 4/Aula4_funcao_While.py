@@ -1,3 +1,6 @@
+# Andre Pinto
+# @Coursera - Introdução ao Python I (USP)
+
 lst = []
 # for i in range(2, 14):
 #     lst.append(2 ** i)

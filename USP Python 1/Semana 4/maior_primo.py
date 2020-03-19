@@ -1,3 +1,6 @@
+# Andre Pinto
+# @Coursera - Introdução ao Python I (USP)
+
 def éPrimo(k):
     divisores = 0
 
