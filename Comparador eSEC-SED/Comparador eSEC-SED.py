@@ -3,6 +3,7 @@
 
 import re
 from openpyxl import Workbook
+from openpyxl.styles import Font
 
 
 def corrige_esec(str):
@@ -21,7 +22,7 @@ def corrige_esec(str):
 
 
 def corrige_sed(str):
-    regex = r"(Ano Leti.*\n.*\n.*\n.*)|(Ativos.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n)"
+    regex = r'(Ano Leti.*\n.*\n.*\n.*)|(Ativos.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n)'
     result = re.sub(regex, '', str)
     regex = r'\n'
     result = re.sub(regex, '', result, 1)
@@ -70,15 +71,21 @@ for line in sheet_rows:
     sheet.append(line)
 
 # FÓRMULAS DE COMPARAÇÃO
-for i in range(999):
-    entry = '=IF(A' + str(i+2) + '=B' + str(i+2) + ',"","ERRO")'
-    cell = "C" + str(i + 2)
+for i in range(998):
+    entry = '=IF(B' + str(i + 4) + '=C' + str(i + 4) + ',"","ERRO")'
+    cell = "C" + str(i + 3)
     sheet[cell] = entry
 
 # FORMATAÇÃO
-sheet.column_dimensions['A'].width = 65
+sheet['C1'] = "OBS."
+sheet.insert_cols(1)
+sheet.insert_rows(1)
+sheet.column_dimensions['A'].width = 4
 sheet.column_dimensions['B'].width = 65
-sheet.column_dimensions['C'].width = 25
+sheet.column_dimensions['C'].width = 65
+sheet.column_dimensions['D'].width = 25
+sheet.row_dimensions[2].height = 30
+sheet.row_dimensions[2].font = Font(name="Calibri", bold=True, size=20)
 
 # EXPORTAÇÃO
 wb.save(filepath)
