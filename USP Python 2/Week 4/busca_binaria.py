@@ -1,4 +1,4 @@
-def binaria(arr, item):
+def busca(arr, item):
     primeiro = 0
     ultimo = len(arr) - 1
 
