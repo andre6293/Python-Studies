@@ -1,11 +1,13 @@
 # Tabuada
+# gera um arquivo .txt com as tabuadas de 1 a 10
 
 linha = 1
 coluna = 1
 addstr = ""
 
-while coluna <= 10:
-    while linha <= 10:
+maximo = int(input("Até qual tabuada você gostaria de gerar?\n"))
+while coluna <= maximo:
+    while linha <= maximo:
         addstr += str(linha * coluna) + "\t"
         linha += 1
     addstr += "\n"
