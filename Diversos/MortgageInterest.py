@@ -1,5 +1,7 @@
 # Andre Pinto
-# 
+# 25/05/2020
+# Converted from java
+# Inspiration: Java Tutorial for Beginners [2020] by  Programming with Mosh
 
 import math
 

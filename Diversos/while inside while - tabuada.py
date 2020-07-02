@@ -1,3 +1,5 @@
+# Andre Pinto
+# 05/02/2020
 # Tabuada
 # gera um arquivo .txt com as tabuadas de 1 a 10
 
