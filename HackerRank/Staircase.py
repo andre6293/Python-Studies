@@ -1,5 +1,6 @@
-# Staircase
-
+# Andre Pinto
+# 08/12/2019
+# https://www.hackerrank.com/challenges/staircase
 
 def staircase(n):
     result = []
@@ -9,7 +10,3 @@ def staircase(n):
         line = (" " * spaces + "#" * sharps)
         result.append(line)
     return "\n".join(result)
-
-
-x = 6
-print(staircase(x))

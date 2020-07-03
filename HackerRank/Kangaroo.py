@@ -1,7 +1,11 @@
-# Kangaroo
-# x = posição inicial
-# v = velocidade
+# Andre Pinto
+# 01/05/2020
+# https://www.hackerrank.com/challenges/kangaroo
 
+
+# Kangaroo
+# x = initial position
+# v = speed
 
 def kangaroo(x1, v1, x2, v2):
     x = 0
@@ -18,6 +22,3 @@ def kangaroo(x1, v1, x2, v2):
             else:
                 x += 1
         return "NO"
-
-
-print(kangaroo(0, 2, 5, 3))

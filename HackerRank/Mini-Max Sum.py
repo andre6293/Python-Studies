@@ -1,3 +1,7 @@
+# Andre Pinto
+# 01/05/2020
+# https://www.hackerrank.com/challenges/mini-max-sum
+
 def miniMaxSum(arr):
     order = sorted(arr)
     minimum = sum(list(order)[0:4])

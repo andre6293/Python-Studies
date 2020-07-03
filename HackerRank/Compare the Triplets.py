@@ -1,3 +1,7 @@
+# Andre Pinto
+# 03/12/2019
+# https://www.hackerrank.com/challenges/compare-the-triplets
+
 def compareTriplets(a, b):
     r_array = [0, 0]
 

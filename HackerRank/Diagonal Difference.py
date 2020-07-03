@@ -1,9 +1,19 @@
+# Andre Pinto
+# 03/12/2019
+# https://www.hackerrank.com/challenges/diagonal-difference
+
 def diagonalDifference(arr):
-    return abs(a[0][0] + a[2][2] - a[0][2] - a[2][0])
+    matrixlen = len(arr)
+    diagonal1 = 0
+    diagonal2 = 0
 
+    # diagonal 1 value
+    for i in range(matrixlen):
+        diagonal1 += arr[i][i]
 
-a = [[1, 2, 3],
-    [4, 5, 6],
-    [9, 8, 9]]
+    # diagonal 2 value
+    for i in range(matrixlen):
+        diagonal2 += arr[i][len(arr) - i - 1]
+    return abs(diagonal1 - diagonal2)
 
-print(diagonalDifference(a))
+print(diagonalDifference(ar))

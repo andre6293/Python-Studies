@@ -1,7 +1,6 @@
-# Breaking the Records
-# https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 # Andre Pinto
 # 22/05/2020
+# https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 
 def breakingRecords (scores):
     lowest = scores[0]

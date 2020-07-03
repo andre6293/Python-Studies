@@ -1,4 +1,7 @@
+# Andre Pinto
+# 04/10/2019
 # Problem_001
+# https://projecteuler.net/problem=1
 
 
 def multiples_3and5(a, b):

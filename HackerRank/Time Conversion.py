@@ -1,3 +1,7 @@
+# Andre Pinto
+# 07/12/2019
+# https://www.hackerrank.com/challenges/time-conversion
+
 def timeConversion(s):
     hr = s[:2]
     resto = s[2:8]

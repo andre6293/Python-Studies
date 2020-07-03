@@ -1,3 +1,7 @@
+# Andre Pinto
+# 26/05/2020
+# https://www.hackerrank.com/challenges/birthday-cake-candles
+
 def bonAppetit (pratos, iAnnaNaoComeu, precos, cobrado):
     amountOfPeople = 2
     totalADividir = (sum(precos) - precos[iAnnaNaoComeu]) / amountOfPeople

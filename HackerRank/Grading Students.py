@@ -1,3 +1,7 @@
+# Andre Pinto
+# 25/05/2019
+# https://www.hackerrank.com/challenges/grading
+
 def gradingStudents(grades):
     for i in range(len(grades)):
         if grades[i] < 38:
@@ -8,8 +12,3 @@ def gradingStudents(grades):
             else:
                 pass
     return grades
-
-
-# teste
-arr = [73, 67, 38, 33]
-print(gradingStudents(arr))
